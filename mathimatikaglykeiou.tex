@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{greek}
+\setotherlanguage{english}
+\setmainfont{LiberationSans} % or another font that supports Greek
+\usepackage{amsmath, amssymb}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[a4paper, margin=1.8cm]{geometry}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{arrows.meta}
+
+\setlist[itemize]{left=1.5em, label=\textbullet}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+
+\input{episimansi} % 2 pages
+
+\newpage
+
+\begin{center}
+    \LARGE \textbf{Ενότητα 1}\\[1ex]
+    \Large \textbf{Κεφάλαιο 1.2}\\
+\end{center}
+
+\input{sinartisi} % 1.5 pages
+
+\input{grafiki_parastasi}
+
+\newpage
+
+\input{vasikes_grafikes}
+
+\end{document}

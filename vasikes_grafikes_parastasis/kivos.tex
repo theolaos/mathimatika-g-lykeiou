@@ -1,0 +1,40 @@
+\begin{center}
+\begin{tikzpicture}[scale=0.8,>=stealth]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Local scope
+  \begin{scope}
+    % Axes
+    \draw[->, thick] (-3,0) -- (3,0) node[right] {$x$};
+    \draw[->, thick] (0,-3) -- (0,3) node[above] {$y$};
+
+    % Origin label
+    \node[below left] at (0,0) {$O$};
+
+
+    % Plot y = e^{x/5}
+    \draw[domain=-2.8:2.8, smooth, variable=\x, blue, thick]
+      plot ({\x},{0.15*(\x)^3});
+    \node at (-3,3) {$\alpha > 0$};
+  \end{scope}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{scope}[xshift=9.1cm] % shift to the right
+    % Axes
+    \draw[->, thick] (-3,0) -- (3,0) node[right] {$x$};
+    \draw[->, thick] (0,-3) -- (0,3) node[above] {$y$};
+
+    % Origin
+    \node[below left] at (0,0) {$O$};
+
+    % Plot y = e^{x/5}
+    \draw[domain=-2.8:2.8, smooth, variable=\x, blue, thick]
+      plot ({\x},{-0.15*(\x)^3});
+
+    \node at (-3.5,3) {$\alpha < 0$};
+
+  \end{scope}
+
+\end{tikzpicture}
+\end{center}

@@ -1,0 +1,21 @@
+\begin{center}
+\begin{tikzpicture}[scale=0.8,>=stealth]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Local scope
+  \begin{scope}
+    % Axes
+    \draw[->, thick] (-0.5,0) -- (6,0) node[right] {$x$};
+    \draw[->, thick] (0,-0.5) -- (0,5) node[above] {$y$};
+
+    % Origin label
+    \node[below left] at (0,0) {$O$};
+
+
+    % Plot y = e^{x/5}
+    \draw[domain=0:6, smooth, variable=\x, blue, thick]
+      plot ({\x},{(\x)^(1/2)});
+
+  \end{scope}
+\end{tikzpicture}
+\end{center}

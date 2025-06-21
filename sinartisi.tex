@@ -1,0 +1,114 @@
+\begin{tcolorbox}[colback=blue!10!white, colframe=blue!50!black, title=Ορισμός Συνάρτησης]
+Έστω $A$ ένα υποσύνολο του $\mathbb{R}$. Ονομάζουμε πραγματική συνάρτηση με πεδίο ορισμου το $A$ μια διαδικασία (κανόνα) $f$ με την οποία κάθε στοιχείο $x\in A$ αντιστοιχίζεται σε έναν μόνο αριθμό $y$. Το $y$ ονομάζεται τιμή της $f$ στο $x$ και συμβολίζεται με $f(x)$.
+\end{tcolorbox}
+
+Συμβολικά τον παραπάνω ορισμό τον γράφουμε:
+\begin{align*}
+f \colon A &\to \mathbb{R}\\
+x &\xrightarrow{f} y = f(x)\\
+\end{align*}
+
+\begin{itemize}
+    \item $x$ : ανεξάρτητη μεταβλητή\\
+    $y$ : εξαρτημένη μεταβλητή
+
+    \item To πεδίο ορισμού της συνάρτησης ορίζεται και ως $A = D_{f}$
+
+
+    \item Το σύνολο που έχει για στοιχεία του τις τιμές της $f$ σε όλα τα $x\in A$, λέγεται σύνολο τιμών της $f$ και συμβολίζεται με $f(A)$ (ή $f(D_{f})$). Είναι δηλαδή:
+    \[
+        f(A) = \left\{ y \mid y = f(x) \text{ για κάποιο } x \in A \right\}
+    \]
+
+    (Ο λόγος που λέει για κάποιο και όχι για κάθε είναι γιατί τότε θα εννοούσε ότι το ίδιο $y$ είναι αποτέλεσμα της $f$ για όλα τα $x$ στο $A$. Δηλαδή πως η $f$ είναι σταθερή ($f(x) = y$ για κάθε $x \in A$). Αυτό προφανώς δεν ισχύει για τις περισσότερες συναρτήσεις.)
+\end{itemize}
+
+\begin{center}
+ \begin{tikzpicture}[scale=1]
+  % Draw ellipses
+  \draw[thick] (-3.5,0) ellipse (1.5cm and 2.5cm);
+  \draw[thick] (0,0) ellipse (1.5cm and 2.5cm);
+  \draw[thick] (5,0) ellipse (1.5cm and 2.5cm);
+  \draw[thick] (8.5,0) ellipse (1.5cm and 2.5cm);
+
+  \tikzset{dot/.style={circle, fill=black, inner sep=1.5pt}}
+
+
+  % Nodes in the left ellipse
+  \node[dot] (a1) at (-3,1.5) {};
+  \node[dot] (a2) at (-4.5,1) {};
+  \node[dot] (a3) at (-4,-0.5) {};
+  \node[dot] (a4) at (-3.5,-1.5) {};
+
+  % Nodes in the right ellipse
+  \node[dot] (b1) at (0,1.8) {};
+  \node[dot] (b2) at (0,0) {};
+  \node[dot] (b3) at (0,-1) {};
+  \node[dot] (b4) at (0.5,-1.5) {};
+
+  % Nodes for the second pair left ellipse
+  \node[dot] (c1) at (4.5,1.5) {};
+  \node[dot] (c2) at (5.5,1) {};
+  \node[dot] (c3) at (5,0) {};
+  \node[dot] (c4) at (5.5,-0.5) {};
+  \node[dot] (c5) at (4.5,-1.5) {};
+
+  % Nodes for the second pair right ellipse
+  \node[dot] (d1) at (8.8,1.8) {};
+  \node[dot] (d2) at (9,0.7) {};
+  \node[dot] (d3) at (9,-0.5) {};
+  \node[dot] (d4) at (8.25,-1.8) {};
+
+  % Curved arrows connecting dots (function mapping)
+  \draw[->, thick, bend left=20] (a1) to (b2);
+  \draw[->, thick, bend right=20] (a2) to (b1);
+  \draw[->, thick, bend right=20] (a2) to (b2);
+  \draw[->, thick, bend left=10] (a3) to (b3);
+  \draw[->, thick, bend right=15] (a4) to (b4);
+
+  \draw[->, thick, bend left=20] (c1) to (d2);
+  \draw[->, thick, bend right=20] (c2) to (d1);
+  \draw[->, thick, bend left=20] (c3) to (d3);
+  \draw[->, thick, bend left=10] (c4) to (d4);
+  \draw[->, thick, bend right=15] (c5) to (d3);
+
+  % Labels
+  \node[black, font=\bfseries] at (-3.5,3) {\Large{$x$}};
+  \node[black, font=\bfseries] at (0,3) {\Large{$y$}};
+
+  \node[black, font=\bfseries] at (5,3) {\Large{$x$}};
+  \node[black, font=\bfseries] at (8.5,3) {\Large{$y$}};
+
+  % More Labels
+
+  \node[black, font=\bfseries] at (-1.7,-3.5) {Δεν είναι συνάρτηση.};
+  \node[black, font=\bfseries] at (6.7,-3.5) {Είναι συνάρτηση.};
+
+
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+\begin{center}
+ % You can also try \huge or \LARGE
+\renewcommand{\arraystretch}{1.5} % Increases row height
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Συνάρτηση} & \textbf{Περιορισμός} \\
+\hline
+$f(x) = \frac{P(x)}{Q(x)}$   & $Q(x) \neq 0$ \\
+\hline
+$f(x) = \sqrt[\nu]{P(x)} , \nu \in \mathbb{N}^* - {1}$    & $P(x) \ge 0$ \\
+\hline
+$f(x) = \ln(P(x))$    & $P(x) > 0$ \\
+\hline
+$f(x) = \varepsilon\varphi(P(x))$        & $P(x) \ne \kappa\pi + \frac{\pi}{2}, \kappa \in \mathbb{Z}$ \\
+\hline
+$f(x) = \sigma\varphi(P(x))$     & $P(x) \ne \kappa\pi, \kappa \in \mathbb{Z}$ \\
+\hline
+$f(x) = (P(x))^{Q(x)}$     & $P(x) > 0$ ή ($P(x) = 0$ και $Q(x) > 0$) ή\\
+&($P(x) < 0$ και $Q(x) \in \mathbb{Z}$)\\
+\hline
+\end{tabular}
+\end{center}
