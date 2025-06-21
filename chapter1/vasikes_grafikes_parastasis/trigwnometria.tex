@@ -4,52 +4,53 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{scope}
     % Axes
-    \draw[->, thick] (-0.5, 0) -- (2, 0) node[right] {$x$};
+    \draw[->, thick] (-0.5, 0) -- (4.3, 0) node[right] {$x$};
     \draw[->, thick] (0, -2) -- (0, 2) node[above] {$y$};
 
     % Plot function y = -sin(x) + 1.5
-    \draw[domain=-2:1.5, smooth, variable=\x, blue, thick]
-        plot ({\x},{sin(\x)});
+    \draw[domain=0:4.18, smooth, variable=\x, blue, thick]
+        plot ({\x},{sin(deg(\x*1.5))/1.5});
 
     % Vertical dotted arrows to x-axis
 
     % Origin and labels
     \node[below left] at (0,0) {$O$};
-
-    \node at (-2.2,2) {$\alpha > 0$};
   \end{scope}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{scope}[xshift=7.2cm]
     % Axes
-    \draw[->, thick] (-2, 0) -- (2, 0) node[right] {$x$};
+    \draw[->, thick] (-0.5, 0) -- (4.3, 0) node[right] {$x$};
     \draw[->, thick] (0, -2) -- (0, 2) node[above] {$y$};
 
     % Plot function
-    \draw[domain=-1:1.7, smooth, variable=\x, blue, thick]
-        plot ({\x},{cos(\x)});
-
+    \draw[domain=0:4.18, smooth, variable=\x, blue, thick]
+        plot ({\x},{cos(deg(\x*1.5))/1.5});
 
     % Origin and labels
     \node[below left] at (0,0) {$O$};
-
-    \node at (-2.2,2) {$\alpha < 0$};
   \end{scope}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{scope}[xshift=14.3cm]
     % Axes
-    \draw[->, thick] (-2, 0) -- (2, 0) node[right] {$x$};
+    \draw[->, thick] (-0.5, 0) -- (4.3, 0) node[right] {$x$};
     \draw[->, thick] (0, -2) -- (0, 2) node[above] {$y$};
 
     % Plot function
-    \draw[domain=-2:2, smooth, variable=\x, blue, thick]
-        plot ({\x},{0.5});
+    \draw[domain=0:0.87, smooth, variable=\x, blue, thick]
+        plot ({\x},{tan(deg(\x*1.5))/1.5});
+
+    % Plot function
+    \draw[domain=1.25:2.96, smooth, variable=\x, blue, thick]
+        plot ({\x},{tan(deg(\x*1.5))/1.5});
+
+    % Plot function
+    \draw[domain=3.34:4.18, smooth, variable=\x, blue, thick]
+        plot ({\x},{tan(deg(\x*1.5))/1.5});
 
 
     \node[below left] at (0,0) {$O$};
-
-    \node at (-2.2,2) {$\alpha = 0$};
   \end{scope}
 
 \end{tikzpicture}
