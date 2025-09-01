@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-XeLaTeX
-lastDocument=chapter1/vasikes_grafikes_parastasis/sxediasmos2.tex
+lastDocument=chapter1/vasikes_grafikes_parastasis/arties_perites.tex
 
 [document-settings,item:mathimatikaglykeiou.tex]
 Bookmarks=33
@@ -16,7 +16,7 @@ open=false
 order=-1
 
 [item:chapter1/vasikes_grafikes.tex]
-open=true
+open=false
 order=3
 
 [item:chapter1/vasikes_grafikes_parastasis/arties_perites.tex]
@@ -77,19 +77,24 @@ ScrollLine=76
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes.tex]
 CursorColumn=0
-CursorLine=27
+CursorLine=1
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/arties_perites.tex]
-CursorColumn=109
-CursorLine=0
+CursorColumn=34
+CursorLine=59
+ScrollLine=30
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/sxediasmos.tex]
 CursorColumn=0
 CursorLine=117
 ScrollLine=88
 
+[view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/sxediasmos2.tex]
+CursorColumn=38
+CursorLine=168
+ScrollLine=105
+
 [view-settings,view=0,item:mathimatikaglykeiou.tex]
 CursorColumn=28
 CursorLine=24
-ScrollLine=8
 ViMarks=a,33,29
