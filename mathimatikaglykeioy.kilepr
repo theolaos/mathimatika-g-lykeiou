@@ -36,6 +36,12 @@ encoding=UTF-8
 highlight=LaTeX
 mode=LaTeX
 
+[item:chapter1/sinthesi.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
 [item:chapter1/vasikes_grafikes.tex]
 archive=true
 encoding=UTF-8
@@ -61,6 +67,12 @@ highlight=LaTeX
 mode=LaTeX
 
 [item:chapter1/vasikes_grafikes_parastasis/paravoli.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
+[item:chapter1/vasikes_grafikes_parastasis/praksis.tex]
 archive=true
 encoding=UTF-8
 highlight=LaTeX

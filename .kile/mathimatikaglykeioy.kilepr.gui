@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-XeLaTeX
-lastDocument=chapter1/isotita.tex
+lastDocument=chapter1/sinthesi.tex
 
 [document-settings,item:mathimatikaglykeiou.tex]
 Bookmarks=33
@@ -12,16 +12,20 @@ open=false
 order=-1
 
 [item:chapter1/isotita.tex]
-open=true
+open=false
 order=1
 
 [item:chapter1/sinartisi.tex]
 open=false
-order=-1
+order=2
+
+[item:chapter1/sinthesi.tex]
+open=true
+order=2
 
 [item:chapter1/vasikes_grafikes.tex]
-open=false
-order=3
+open=true
+order=1
 
 [item:chapter1/vasikes_grafikes_parastasis/arties_perites.tex]
 open=false
@@ -38,6 +42,10 @@ order=-1
 [item:chapter1/vasikes_grafikes_parastasis/paravoli.tex]
 open=false
 order=-1
+
+[item:chapter1/vasikes_grafikes_parastasis/praksis.tex]
+open=false
+order=2
 
 [item:chapter1/vasikes_grafikes_parastasis/riti_grafiki.tex]
 open=false
@@ -76,17 +84,27 @@ CursorColumn=0
 CursorLine=93
 ScrollLine=80
 
-[view-settings,view=0,item:chapter1/sinartisi.tex]
-ScrollLine=76
+[view-settings,view=0,item:chapter1/isotita.tex]
+CursorColumn=39
+CursorLine=0
+
+[view-settings,view=0,item:chapter1/sinthesi.tex]
+CursorColumn=35
+CursorLine=22
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes.tex]
-CursorColumn=0
-CursorLine=1
+CursorColumn=52
+CursorLine=36
+ScrollLine=5
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/arties_perites.tex]
-CursorColumn=17
-CursorLine=41
-ScrollLine=30
+CursorColumn=95
+CursorLine=32
+ScrollLine=17
+
+[view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/praksis.tex]
+CursorColumn=98
+CursorLine=20
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/sxediasmos.tex]
 CursorColumn=0
@@ -95,11 +113,10 @@ ScrollLine=88
 
 [view-settings,view=0,item:chapter1/vasikes_grafikes_parastasis/sxediasmos2.tex]
 CursorColumn=38
-CursorLine=168
-ScrollLine=138
+CursorLine=9
 
 [view-settings,view=0,item:mathimatikaglykeiou.tex]
-CursorColumn=16
-CursorLine=41
-ScrollLine=13
+CursorColumn=24
+CursorLine=43
+ScrollLine=11
 ViMarks=a,33,29
