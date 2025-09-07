@@ -1,4 +1,4 @@
-{\large \textbf{Άρτιες και περιττές συναρτήσεις}}
+{\large \textbf{- Άρτιες και περιττές συναρτήσεις}}
 \vspace{1em}
 
 Μια συνάρτηση $f: A \to \mathbb{R}$ λέγεται \textbf{άρτια} όταν ισχύει
@@ -36,19 +36,27 @@ f(-x) = -f(x) \quad \text{για κάθε } x, -x \in A.
 \textbf{Γραφικές Παραστάσεις:}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.7]
+\begin{tikzpicture}[scale=0.7,  >=stealth]
   % Άξονες
-  \draw[->] (-3,0) -- (3,0) node[right] {$x$};
-  \draw[->] (0,-1) -- (0,5) node[above] {$y$};
+  \draw[->, thick] (-3,0) -- (3,0) node[right] {$x$};
+  \draw[->, thick] (0,-1) -- (0,5) node[above] {$y$};
 
   % Καμπύλη y = x^2
   \draw[domain=-2.2:2.2, smooth, variable=\x, blue, thick] plot ({\x}, {\x*\x});
 
   % Ετικέτα
   \node[blue] at (4,4.5) {$y=x^2$};
+  \node at (1.5,-0.5) {$x$};
+  \node at (-1.5,-0.5) {$-x$};
+  \draw[dotted, thick, ->] (1.5, 0) -- (1.5, 2.25);
+  \draw[dotted, thick, ->] (-1.5, 0) -- (-1.5, 2.25);
+  \draw[dotted, thick, ->] (-1.5, 2.25) -- (-0.05, 2.25);
+  \draw[dotted, thick, ->] (1.5, 2.25) -- (0.05, 2.25);
+  \node at (0.7, 2.7) {$f(x)$};
+
 \end{tikzpicture}
 \hspace{2cm}
-\begin{tikzpicture}[scale=0.7]
+\begin{tikzpicture}[scale=0.7, >=stealth]
   % Άξονες
   \draw[->] (-3,0) -- (3,0) node[right] {$x$};
   \draw[->] (0,-3) -- (0,3) node[above] {$y$};
@@ -58,5 +66,15 @@ f(-x) = -f(x) \quad \text{για κάθε } x, -x \in A.
 
   % Ετικέτα
   \node[red] at (4,2.7) {$y=x^3$};
+
+  \draw[dotted, thick, ->] (1.6, 0) -- (1.6, 1.46);
+  \draw[dotted, thick, ->] (-1.6, 0) -- (-1.6, -1.46);
+  \node at (-1.6,0.4) {$-x$};
+  \node at (1.6,-0.4) {$x$};
+  \draw[dotted, thick, ->] (-1.6, -1.46) -- (0, -1.46);
+  \draw[dotted, thick, ->] (1.6, 1.46) -- (0, 1.46);
+  \node at (0.85,-1.46) {$f(-x)$};
+  \node at (-0.7,1.46) {$f(x)$};
+
 \end{tikzpicture}
 \end{center}
